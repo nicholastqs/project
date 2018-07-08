@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="latest">
+        <item>Latest</item>
+        <item>Trending</item>
+        <item>Genre</item>
+    </array>
+</resources>

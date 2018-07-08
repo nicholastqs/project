@@ -34,7 +34,13 @@
     <string name="tab_text_2">Latest</string>
     <string name="tab_text_3">Trending</string>
     <string name="tab_text_4">Genre</string>
+    <string name="watchlist">Watchlist</string>
+    <string name="favorites">Favorites</string>
+    <string name="rated">Rated</string>
+    <string name="recommendation">Recommendation</string>
 
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>

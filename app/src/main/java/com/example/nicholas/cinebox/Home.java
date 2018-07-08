@@ -1,3 +1,4 @@
+/*
 package com.example.nicholas.cinebox;
 
 import android.content.Intent;
@@ -78,10 +79,12 @@ public class Home extends AppCompatActivity {
     }
 
     public static class PlaceholderFragment extends Fragment {
-        /**
+        */
+/**
          * The fragment argument representing the section number for this
          * fragment.
-         */
+         *//*
+
         private static final String ARG_SECTION_NUMBER = "section_number";
         private ImageButton imagedp;
         private ImageButton imagedp1;
@@ -111,10 +114,12 @@ public class Home extends AppCompatActivity {
         public PlaceholderFragment() {
         }
 
-        /**
+        */
+/**
          * Returns a new instance of this fragment for the given section
          * number.
-         */
+         *//*
+
         public static PlaceholderFragment newInstance(int sectionNumber) {
             PlaceholderFragment fragment = new PlaceholderFragment();
             Bundle args = new Bundle();
@@ -386,10 +391,12 @@ public class Home extends AppCompatActivity {
         }
     }
 
-    /**
+    */
+/**
      * A {@link FragmentPagerAdapter} that returns a fragment corresponding to
      * one of the sections/tabs/pages.
-     */
+     *//*
+
     public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
         public SectionsPagerAdapter(FragmentManager fm) {
@@ -425,3 +432,4 @@ public class Home extends AppCompatActivity {
         }
     }
 }
+*/

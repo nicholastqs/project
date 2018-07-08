@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_watchlist"
+            android:icon="@mipmap/baseline_queue_white_24dp"
+            android:title="@string/watchlist" />
+
+        <item android:id="@+id/nav_favorites"
+            android:icon="@mipmap/baseline_favorite_white_24dp"
+            android:title="@string/favorites"/>
+
+        <item android:id="@+id/nav_rated"
+            android:icon="@mipmap/baseline_star_white_24dp"
+            android:title="@string/rated"/>
+
+        <item android:id="@+id/nav_recommendation"
+            android:icon="@mipmap/baseline_library_books_white_24dp"
+            android:title="@string/recommendation"/>
+
+    </group>
+</menu>

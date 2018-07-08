@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.DetailActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+    <ImageView
+        android:id="@+id/movie_image"
+        android:layout_width="@dimen/_118sdp"
+        android:layout_height="@dimen/_155sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/toolbar"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Title"
+        android:textSize="18sp"
+        android:layout_below="@id/movie_image"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Duration"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/title"/>
+
+    <TextView
+        android:id="@+id/movie_pg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="PG"
+        android:layout_below="@id/duration"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/release_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Release Date"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/movie_pg"/>
+
+    <TextView
+        android:id="@+id/details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Details"
+        android:gravity="center"
+        android:layout_below="@id/release_date"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

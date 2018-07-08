@@ -6,6 +6,7 @@
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -14,33 +15,43 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".signUp" />
-        <activity android:name=".signIn" />
-        <activity android:name=".successful" />
-        <activity android:name=".Home" />
-        <activity android:name=".Deadpool2"
-            android:label="Deadpool 2"/>
+        <activity android:name=".activities.RegisterActivity" />
+        <activity android:name=".activities.LoginActivity" />
+        <activity android:name=".activities.successful" />
+
         <activity
-            android:name=".Main2Activity"
+            android:name=".Deadpool2"
+            android:label="Deadpool 2" />
+        <!--<activity
+            android:name=".MainActivity"
             android:label="@string/title_activity_main2"
-            android:theme="@style/AppTheme" />
-        <activity android:name=".JurassicWorld"
-            android:label="Jurassic World: Fallen Kingdom"/>
-        <activity android:name=".Avengers"
-            android:label="Avengers: Infinity War"/>
-        <activity android:name=".Thor"
-            android:label="Thor: Ragnarok"/>
-        <activity android:name=".Incredibles2"
-            android:label="Incredibles 2"/>
-        <activity android:name=".Kingsman"
-            android:label="Kingsman: The Golden Circle"/>
+            android:theme="@style/AppTheme.NoActionBar" />-->
+        <activity
+            android:name=".JurassicWorld"
+            android:label="Jurassic World: Fallen Kingdom" />
+        <activity
+            android:name=".Avengers"
+            android:label="Avengers: Infinity War" />
+        <activity
+            android:name=".Thor"
+            android:label="Thor: Ragnarok" />
+        <activity
+            android:name=".Incredibles2"
+            android:label="Incredibles 2" />
+        <activity
+            android:name=".Kingsman"
+            android:label="Kingsman: The Golden Circle" />
+        <activity android:name=".activities.DetailActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
     </application>
 
 </manifest>

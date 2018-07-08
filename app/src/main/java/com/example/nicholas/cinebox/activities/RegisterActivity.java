@@ -1,4 +1,4 @@
-package com.example.nicholas.cinebox;
+package com.example.nicholas.cinebox.activities;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -6,26 +6,30 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class successful extends AppCompatActivity {
+import com.example.nicholas.cinebox.R;
+import com.example.nicholas.cinebox.activities.successful;
 
-    private Button button;
+public class RegisterActivity extends AppCompatActivity {
+
+    private Button button ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_successful);
+        setContentView(R.layout.activity_sign_up);
 
-        button = (Button) findViewById(R.id.bcontinue);
+        button = (Button) findViewById(R.id.bcreateacc);
         button.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view)
             {
-                opensignIn(view);
+                opensuccessful(view);
             }
         });
     }
-    public void opensignIn (View v){
-        Intent intent = new Intent(this , signIn.class);
+
+    public void opensuccessful(View v) {
+        Intent intent = new Intent(this, successful.class);
         startActivity(intent);
     }
 }
