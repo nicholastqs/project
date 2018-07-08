@@ -1,5 +1,7 @@
 package com.example.nicholas.cinebox;
 
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.os.PersistableBundle;
 import android.support.annotation.NonNull;
@@ -28,11 +30,14 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.example.nicholas.cinebox.activities.BaseActivity;
+import com.example.nicholas.cinebox.activities.WelcomeActivity;
 import com.example.nicholas.cinebox.fragments.FavoritesFragment;
 import com.example.nicholas.cinebox.fragments.RatedFragment;
 import com.example.nicholas.cinebox.fragments.RecommendedFragment;
 import com.example.nicholas.cinebox.fragments.WatchListFragment;
 import com.example.nicholas.cinebox.utils.Constants;
+import com.github.javiersantos.materialstyleddialogs.MaterialStyledDialog;
+import com.github.javiersantos.materialstyleddialogs.enums.Style;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -53,6 +58,9 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
 
     public int mNavItemId;
     boolean navMenuFirst = true;
+
+    SharedPreferences mPref;
+    SharedPreferences.Editor mEditor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -133,12 +141,35 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.about:
-                showToast(getString(R.string.app_name));
+            case R.id.logout:
+                logout();
                 break;
             default:
                 break;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    public void logout() {
+        new MaterialStyledDialog.Builder(this)
+                .setTitle(getString(R.string.logout_title))
+                .setStyle(Style.HEADER_WITH_ICON)
+                .setIcon(R.drawable.ic_thumb_down)
+                .setDescription(getString(R.string.logout_dialog))
+                .setPositiveText(R.string.yes)
+                .setNegativeText(getString(R.string.no))
+                .onPositive((dialog, which) -> {
+                    Constants.storeLoggedInUserPref(false);
+                    Constants.storeUser("");
+                    Intent intent = new Intent(this, WelcomeActivity.class);
+                    intent.putExtra("finish", true);
+                    intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP |
+                            Intent.FLAG_ACTIVITY_CLEAR_TASK |
+                            Intent.FLAG_ACTIVITY_NEW_TASK);
+                    startActivity(intent);
+                    finish();
+                })
+                .show();
+
     }
 }

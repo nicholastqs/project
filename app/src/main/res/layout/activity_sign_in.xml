@@ -54,6 +54,7 @@
         android:layout_marginTop="8dp"
         android:background="#171717"
         android:text="Sign In"
+        android:textColor="@android:color/white"
         android:textAllCaps="false"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -92,6 +93,7 @@
         android:layout_marginTop="8dp"
         android:background="#5a5858"
         android:ems="10"
+        android:textColorHint="@android:color/white"
         android:hint="Username Or Email"
         android:inputType="textPersonName"
         android:selectAllOnFocus="false"
@@ -130,6 +132,7 @@
         android:layout_marginTop="8dp"
         android:background="#5a5858"
         android:ems="10"
+        android:textColorHint="@android:color/white"
         android:hint="Password"
         android:inputType="textPassword"
         android:textColor="@android:color/background_light"
@@ -192,7 +195,7 @@
         app:layout_constraintVertical_bias="0.074" />
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/remember_me"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
