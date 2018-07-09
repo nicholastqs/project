@@ -78,4 +78,6 @@ public class MoviesModel {
     public void setDuration(String duration) {
         this.duration = duration;
     }
+
+
 }
