@@ -10,17 +10,17 @@
         android:theme="@style/ThemeOverlay.AppCompat.Dark">
 
         <android.support.design.widget.TabLayout
+            android:id="@+id/tabLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/tabLayout"
-            android:fillViewport="true"
-            android:layout_gravity="bottom"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
+            android:layout_gravity="bottom"
             android:background="@color/colorPrimary"
-            app:tabTextColor="@android:color/white"
+            android:fillViewport="true"
+            app:tabGravity="fill"
             app:tabSelectedTextColor="@android:color/white"
-            app:tabGravity="fill"/>
+            app:tabTextColor="@android:color/white" />
     </android.support.design.widget.AppBarLayout>
     <android.support.v4.view.ViewPager
         android:layout_width="wrap_content"
