@@ -58,9 +58,7 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
 
     public int mNavItemId;
     boolean navMenuFirst = true;
-
-    SharedPreferences mPref;
-    SharedPreferences.Editor mEditor;
+    private boolean isLoggedIn = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -133,6 +131,23 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
     }
 
     @Override
+    protected void onResume() {
+        super.onResume();
+        isLoggedIn = Constants.getLoggedInUserPref();
+    }
+
+    @Override
+    public boolean onPrepareOptionsMenu(Menu menu) {
+        MenuItem item = menu.findItem(R.id.logout);
+        if (isLoggedIn) {
+            item.setVisible(true);
+        } else {
+            item.setVisible(false);
+        }
+        return true;
+    }
+
+    @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main_menu, menu);
         return super.onCreateOptionsMenu(menu);
@@ -170,6 +185,5 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
                     finish();
                 })
                 .show();
-
     }
 }

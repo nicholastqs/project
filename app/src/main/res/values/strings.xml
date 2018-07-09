@@ -11,6 +11,10 @@
     <string name="error_invalid_password">This password is too short</string>
     <string name="error_incorrect_password">This password is incorrect</string>
     <string name="error_field_required">This field is required</string>
+    <string name="error_username_required">Username is required</string>
+    <string name="error_password_required">Password is required</string>
+    <string name="error_username_incorrect">Username is not correct</string>
+    <string name="error_password_incorrect">Password is not correct</string>
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
@@ -39,7 +43,6 @@
     <string name="rated">Rated</string>
     <string name="recommendation">Recommendation</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
     <string name="logout_title">Logout</string>
