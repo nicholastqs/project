@@ -14,8 +14,8 @@
         android:id="@+id/movie_image"
         android:layout_width="@dimen/_118sdp"
         android:layout_height="@dimen/_155sdp"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/toolbar"/>
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toolbar" />
 
     <TextView
         android:id="@+id/title"

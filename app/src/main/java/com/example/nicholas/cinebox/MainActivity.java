@@ -116,9 +116,12 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         int id = item.getItemId();
-        if (id == R.id.nav_watchlist) {
+        if (id == R.id.nav_home) {
             mFragmentTransaction = mFragmentManager.beginTransaction();
             mFragmentTransaction.replace(R.id.containerView, new WatchListFragment()).addToBackStack(Constants.NAV_ITEM_ID).commit();
+        } else if (id == R.id.nav_watchlist) {
+            mFragmentTransaction = mFragmentManager.beginTransaction();
+            mFragmentTransaction.replace(R.id.containerView, RatedFragment.newInstance()).commit();
         } else if (id == R.id.nav_rated) {
             mFragmentTransaction = mFragmentManager.beginTransaction();
             mFragmentTransaction.replace(R.id.containerView, RatedFragment.newInstance()).commit();
