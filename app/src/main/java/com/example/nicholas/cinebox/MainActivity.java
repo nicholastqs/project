@@ -31,6 +31,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.nicholas.cinebox.activities.BaseActivity;
 import com.example.nicholas.cinebox.activities.WelcomeActivity;
@@ -157,9 +158,8 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main_menu, menu);
-        final SearchView searchView = (SearchView) MenuItemCompat.getActionView(menu.findItem(R.id.search));
-        SearchManager searchManager = (SearchManager) getSystemService(SEARCH_SERVICE);
-        searchView.setSearchableInfo(searchManager.getSearchableInfo(getComponentName()));
+        SearchView searchView = (SearchView) menu.findItem(R.id.search).getActionView();
+        searchView.setOnQueryTextListener(queryTextListener);
         return super.onCreateOptionsMenu(menu);
     }
 
@@ -174,6 +174,21 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
         }
         return super.onOptionsItemSelected(item);
     }
+
+    private SearchView.OnQueryTextListener queryTextListener = new SearchView.OnQueryTextListener()
+    {
+        @Override
+        public boolean onQueryTextSubmit(String query) {
+            //if you need this
+            return false;
+        }
+
+        @Override
+        public boolean onQueryTextChange(String query) {
+            //your code
+            return true;
+        }
+    };
 
     public void logout() {
         new MaterialStyledDialog.Builder(this)

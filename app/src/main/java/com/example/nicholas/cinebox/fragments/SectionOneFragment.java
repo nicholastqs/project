@@ -1,7 +1,6 @@
 package com.example.nicholas.cinebox.fragments;
 
 import android.content.Context;
-import android.graphics.Movie;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.DefaultItemAnimator;
@@ -11,21 +10,16 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.nicholas.cinebox.adapter.MoviesAdapter;
 import com.example.nicholas.cinebox.R;
+import com.example.nicholas.cinebox.adapter.MoviesAdapter;
 import com.example.nicholas.cinebox.model.MoviesModel;
-import com.example.nicholas.cinebox.utils.MoviesCollection;
-import com.example.nicholas.cinebox.utils.MoviesData;
 
 import java.util.ArrayList;
-import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class SectionOneFragment extends Fragment {
-
-    MoviesCollection moviesCollection = new MoviesCollection();
 
     ArrayList<MoviesModel> movies = new ArrayList<>();
     @BindView(R.id.movies_list)
@@ -62,7 +56,6 @@ public class SectionOneFragment extends Fragment {
 
         movies.clear();
         prepareMovies();
-
 
 
         return mView;

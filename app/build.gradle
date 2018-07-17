@@ -31,9 +31,13 @@ dependencies {
     implementation 'com.android.support:support-v4:27.1.1'
     implementation 'com.android.support:cardview-v7:27.1.1'
 
+    /*https://firebase.google.com/docs/auth/android/password-auth#sign_in_a_user_with_an_email_address_and_password*/
+
+    /*https://github.com/firebase/quickstart-android/blob/6b85671ca1fc9403b1f0bf5fbb473dd6509516b4/auth/app/src/main/java/com/google/firebase/quickstart/auth/EmailPasswordActivity.java#L66-L66*/
+    implementation 'com.google.firebase:firebase-auth:16.0.2'
+    //implementation 'com.google.firebase:firebase-database:11.6.0'
+
     implementation 'com.jakewharton:butterknife:8.8.1'
-    implementation 'com.google.firebase:firebase-auth:11.6.0'
-    implementation 'com.google.firebase:firebase-database:11.6.0'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
 
     implementation 'com.github.javiersantos:MaterialStyledDialogs:2.1'

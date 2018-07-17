@@ -47,6 +47,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignStart="@+id/movie_title"
+            android:layout_alignLeft="@id/movie_title"
             android:layout_below="@+id/movie_genre"
             android:textSize="16sp"
             tools:text="PG | Rating: 8.3/10" />
@@ -57,6 +58,7 @@
             android:layout_height="wrap_content"
             android:layout_alignBottom="@+id/movie_img"
             android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
             android:ellipsize="end"
             android:maxLines="3"
             tools:text="Elastigirl springs into action to save the day, while Mr. Incredible faces his greatest challenge yet - taking care of the problems of his three children." />

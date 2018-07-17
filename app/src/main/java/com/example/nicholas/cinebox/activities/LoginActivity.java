@@ -18,6 +18,14 @@ import butterknife.ButterKnife;
 
 public class LoginActivity extends AppCompatActivity {
 
+    /**
+     * It's very important you follow the links below to understand how to work with Firebase Authentication
+     * */
+
+    /*https://firebase.google.com/docs/auth/android/password-auth#sign_in_a_user_with_an_email_address_and_password*/
+
+    /*https://github.com/firebase/quickstart-android/blob/6b85671ca1fc9403b1f0bf5fbb473dd6509516b4/auth/app/src/main/java/com/google/firebase/quickstart/auth/EmailPasswordActivity.java#L66-L66*/
+
     private Button button;
     EditText Name;
     EditText Password;
