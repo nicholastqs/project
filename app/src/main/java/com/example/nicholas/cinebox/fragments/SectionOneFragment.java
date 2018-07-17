@@ -25,9 +25,9 @@ import butterknife.ButterKnife;
 
 public class SectionOneFragment extends Fragment {
 
-    private MoviesCollection moviesCollection = new MoviesCollection();
+    MoviesCollection moviesCollection = new MoviesCollection();
 
-    private List<MoviesModel> movies = new ArrayList<>();
+    ArrayList<MoviesModel> movies = new ArrayList<>();
     @BindView(R.id.movies_list)
     RecyclerView mRecyclerList;
     private MoviesAdapter mAdapter;
@@ -40,17 +40,11 @@ public class SectionOneFragment extends Fragment {
         // Required empty public constructor
     }
 
-    public static SectionOneFragment newInstance() {
-        SectionOneFragment fragment = new SectionOneFragment();
-        Bundle args = new Bundle();
-        fragment.setArguments(args);
-        return fragment;
-    }
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
     }
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -67,22 +61,22 @@ public class SectionOneFragment extends Fragment {
         mRecyclerList.setItemAnimator(new DefaultItemAnimator());
 
         movies.clear();
-        moviesData();
+        prepareMovies();
+
+
 
         return mView;
     }
 
-    private void moviesData() {
-        MoviesModel Avengers = new MoviesModel;
-        movies.add(Avengers);
 
-        MoviesModel jurassic = new MoviesModel(MoviesData.JURASSIC_IMAGE, MoviesData.JURASSIC_TITLE, MoviesData.JURASSIC_GENRE, MoviesData.JURASSIC_PG, MoviesData.JURASSIC_DETAILS, MoviesData.JURASSIC_DATE, MoviesData.JURASSIC_DURATION);
-        movies.add(jurassic);
+    public void prepareMovies() {
+        MoviesModel model;
+        model = new MoviesModel("https://upload.wikimedia.org/wikipedia/fi/thumb/f/f9/TheAvengers2012Poster.jpg/250px-TheAvengers2012Poster.jpg", "Avengers", "Action | Adventure | Fantasy", "PG-13", "Iron Man, Thor, the Hulk and the rest of the Avengers unite to battle their most powerful enemy yet -- the evil Thanos. On a mission to collect all six Infinity Stones, Thanos plans to use the artifacts to inflict his twisted will on reality. The fate of the planet and existence itself has never been more uncertain as everything the Avengers have fought for has led up to this moment.", "27 April 2018", "2h 29min");
+        movies.add(model);
 
-        MoviesModel kingsman = new MoviesModel(MoviesData.KINGSMAN_IMAGE, MoviesData.KINGSMAN_TITLE, MoviesData.KINGSMAN_GENRE, MoviesData.KINGSMAN_PG, MoviesData.KINGSMAN_DETAILS, MoviesData.KINGSMAN_DATE, MoviesData.KINGSMAN_DURATION);
-        movies.add(kingsman);
-
-        mAdapter.notifyDataSetChanged();
+        model = new MoviesModel("https://upload.wikimedia.org/wikipedia/fi/thumb/f/f9/TheAvengers2012Poster.jpg/250px-TheAvengers2012Poster.jpg",
+                "Avengers", "Action | Adventure | Fantasy", "PG-13", "Iron Man, Thor, the Hulk and the rest of the Avengers unite to battle their most powerful enemy yet -- the evil Thanos. On a mission to collect all six Infinity Stones, Thanos plans to use the artifacts to inflict his twisted will on reality. The fate of the planet and existence itself has never been more uncertain as everything the Avengers have fought for has led up to this moment.", "27 April 2018", "2h 29min");
+        movies.add(model);
     }
 
 
