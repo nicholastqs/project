@@ -75,7 +75,7 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
             mNavItemId = savedInstanceState.getInt(Constants.NAV_ITEM_ID);
             navMenuFirst = savedInstanceState.getBoolean(Constants.NAV_MENU_VIEW);
         } else {
-            mNavItemId = R.id.home;
+            mNavItemId = R.id.nav_watchlist;
         }
 
         mToggle = new ActionBarDrawerToggle(this, mDrawerLayout, mToolbar, R.string.open, R.string.close);
