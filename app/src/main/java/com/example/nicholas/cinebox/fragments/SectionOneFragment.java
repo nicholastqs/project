@@ -72,8 +72,9 @@ public class SectionOneFragment extends Fragment {
         return mView;
     }
 
+
     private void moviesData() {
-        MoviesModel Avengers = new MoviesModel;
+        MoviesModel Avengers = new MoviesModel();
         movies.add(Avengers);
 
         MoviesModel jurassic = new MoviesModel(MoviesData.JURASSIC_IMAGE, MoviesData.JURASSIC_TITLE, MoviesData.JURASSIC_GENRE, MoviesData.JURASSIC_PG, MoviesData.JURASSIC_DETAILS, MoviesData.JURASSIC_DATE, MoviesData.JURASSIC_DURATION);

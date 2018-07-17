@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "334497080970",
+    "firebase_url": "https://account-358fc.firebaseio.com",
+    "project_id": "account-358fc",
+    "storage_bucket": "account-358fc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:334497080970:android:cdfa093baf5fbfe5",
+        "android_client_info": {
+          "package_name": "com.example.nicholas.cinebox"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "334497080970-kl82nb052l5l3jc3kl3dha69nln93t4i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.nicholas.cinebox",
+            "certificate_hash": "a2398f37bba28b157076375b7c21af96d103a435"
+          }
+        },
+        {
+          "client_id": "334497080970-qlmv9skscptkjt093crca8d1u0t32bub.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDd6sXjBgmd2C3vyltwZl36MzX3EsMgi3M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "334497080970-qlmv9skscptkjt093crca8d1u0t32bub.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
