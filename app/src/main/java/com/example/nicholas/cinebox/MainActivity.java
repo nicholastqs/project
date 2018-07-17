@@ -86,7 +86,7 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
 
         mFragmentManager = getSupportFragmentManager();
         mFragmentTransaction = mFragmentManager.beginTransaction();
-        mFragmentTransaction.replace(R.id.containerView, new WatchListFragment()).commit();
+        mFragmentTransaction.replace(R.id.containerView, new HomeFragment()).commit();
 
         mNavigationView.setNavigationItemSelectedListener(this);
 
