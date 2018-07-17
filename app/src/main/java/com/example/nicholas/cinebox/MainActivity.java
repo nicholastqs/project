@@ -35,6 +35,7 @@ import android.widget.TextView;
 import com.example.nicholas.cinebox.activities.BaseActivity;
 import com.example.nicholas.cinebox.activities.WelcomeActivity;
 import com.example.nicholas.cinebox.fragments.FavoritesFragment;
+import com.example.nicholas.cinebox.fragments.HomeFragment;
 import com.example.nicholas.cinebox.fragments.RatedFragment;
 import com.example.nicholas.cinebox.fragments.RecommendedFragment;
 import com.example.nicholas.cinebox.fragments.WatchListFragment;
@@ -85,7 +86,7 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
 
         mFragmentManager = getSupportFragmentManager();
         mFragmentTransaction = mFragmentManager.beginTransaction();
-        mFragmentTransaction.replace(R.id.containerView, new WatchListFragment()).commit();
+        mFragmentTransaction.replace(R.id.containerView, new HomeFragment()).commit();
 
         mNavigationView.setNavigationItemSelectedListener(this);
 
@@ -116,9 +117,12 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         int id = item.getItemId();
-        if (id == R.id.nav_watchlist) {
+        if (id == R.id.nav_home) {
             mFragmentTransaction = mFragmentManager.beginTransaction();
-            mFragmentTransaction.replace(R.id.containerView, new WatchListFragment()).addToBackStack(Constants.NAV_ITEM_ID).commit();
+            mFragmentTransaction.replace(R.id.containerView, new HomeFragment()).addToBackStack(Constants.NAV_ITEM_ID).commit();
+        } else if (id == R.id.nav_watchlist) {
+            mFragmentTransaction = mFragmentManager.beginTransaction();
+            mFragmentTransaction.replace(R.id.containerView, WatchListFragment.newInstance()).commit();
         } else if (id == R.id.nav_rated) {
             mFragmentTransaction = mFragmentManager.beginTransaction();
             mFragmentTransaction.replace(R.id.containerView, RatedFragment.newInstance()).commit();

@@ -25,4 +25,17 @@ public class MoviesData {
     public static final String JURASSIC_DURATION = "2h 29min";
     public static final String JURASSIC_DETAILS = "A volcanic eruption threatens the remaining dinosaurs on the island of Isla Nublar,where the creatures have freely roamed for several years after the demise of an animal theme park known as Jurassic World.";
     public static final String JURASSIC_DESCRIPTION = "Three years after the destruction of the Jurassic World theme park, Owen Grady and Claire Dearing return to the island of Isla Nublar to save the remaining dinosaurs from a volcano that's about to erupt. They soon encounter terrifying new breeds of gigantic dinosaurs, while uncovering a conspiracy that threatens the entire planet.";
+
+    /*Kingsman: The Golden Circle*/
+    public static final String KINGSMAN_TITLE = "Kingsman: The Golden Circle-z";
+    public static final String KINGSMAN_IMAGE = "https://m.media-amazon.com/images/M/MV5BMjQ3OTgzMzY4NF5BMl5BanBnXkFtZTgwOTc4OTQyMzI@._V1_UX182_CR0,0,182,268_AL_.jpg";
+    public static final String KINGSMAN_DATE = "27 April, 2018";
+    public static final String KINGSMAN_GENRE = "Action | Adventure | Sci-Fi";
+    public static final String KINGSMAN_LANG = "English";
+    public static final String KINGSMAN_PG = "PG-13";
+    public static final String KINGSMAN_RATING = "Rating: 6.6/10";
+    public static final String KINGSMAN_DURATION = "2h 29min";
+    public static final String KINGSMAN_DETAILS = "A volcanic eruption threatens the remaining dinosaurs on the island of Isla Nublar,where the creatures have freely roamed for several years after the demise of an animal theme park known as Jurassic World.";
+    public static final String KINGSMAN_DESCRIPTION = "Three years after the destruction of the Jurassic World theme park, Owen Grady and Claire Dearing return to the island of Isla Nublar to save the remaining dinosaurs from a volcano that's about to erupt. They soon encounter terrifying new breeds of gigantic dinosaurs, while uncovering a conspiracy that threatens the entire planet.";
 }
+

@@ -10,9 +10,6 @@ public class MoviesModel {
     private String release_date;
     private String duration;
 
-    public MoviesModel() {
-    }
-
     public MoviesModel(String image, String title, String genre, String pg, String description, String release_date, String duration) {
         this.image = image;
         this.title = title;
