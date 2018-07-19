@@ -17,6 +17,16 @@
         android:layout_alignParentStart="true"
         android:layout_below="@+id/toolbar" />
 
+    <ImageView
+        android:id="@+id/movie_background"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_155sdp"
+        android:layout_alignStart="@+id/title"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginStart="-188dp"
+        android:alpha="0.40"/>
+
+
     <TextView
         android:id="@+id/title"
         android:layout_width="wrap_content"

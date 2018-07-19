@@ -52,6 +52,7 @@ public class MoviesAdapter extends RecyclerView.Adapter<MoviesAdapter.ViewHolder
         String image = model.getImage();
         String duration = model.getDuration();
         String release_date = model.getRelease_date();
+        String background = model.getBackground();
 
         holder.movie_card.setOnClickListener(v -> {
             Intent intent = new Intent(mContext, DetailActivity.class);
@@ -62,6 +63,7 @@ public class MoviesAdapter extends RecyclerView.Adapter<MoviesAdapter.ViewHolder
             intent.putExtra("image", image);
             intent.putExtra("duration", duration);
             intent.putExtra("release_date", release_date);
+            intent.putExtra("background", background);
             mContext.startActivity(intent);
         });
     }
@@ -86,6 +88,7 @@ public class MoviesAdapter extends RecyclerView.Adapter<MoviesAdapter.ViewHolder
             pg = itemView.findViewById(R.id.movie_pg);
             description = itemView.findViewById(R.id.movie_description);
             avatar = itemView.findViewById(R.id.movie_img);
+            background = itemView.findViewById(R.id.movie_background);
             movie_card = itemView.findViewById(R.id.movie_card);
         }
     }

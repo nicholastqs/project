@@ -9,8 +9,9 @@ public class MoviesModel {
     private String description;
     private String release_date;
     private String duration;
+    private String background;
 
-    public MoviesModel(String image, String title, String genre, String pg, String description, String release_date, String duration) {
+    public MoviesModel(String image, String title, String genre, String pg, String description, String release_date, String duration , String background) {
         this.image = image;
         this.title = title;
         this.genre = genre;
@@ -18,6 +19,7 @@ public class MoviesModel {
         this.description = description;
         this.release_date = release_date;
         this.duration = duration;
+        this.background = background;
     }
 
     public String getImage() {
@@ -74,6 +76,14 @@ public class MoviesModel {
 
     public void setDuration(String duration) {
         this.duration = duration;
+    }
+
+    public String getBackground() {
+        return background;
+    }
+
+    public void setBackground() {
+        this.background = background;
     }
 
 

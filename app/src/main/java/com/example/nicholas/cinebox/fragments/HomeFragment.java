@@ -87,7 +87,7 @@ public class HomeFragment extends Fragment {
 
     private class FragmentsAdapter extends FragmentStatePagerAdapter {
         /*You can get Tab Titles using this implementation. However doing this is not recommended for localisation of your app*/
-        private String frags[] = {"Home", "Latest", "SECTION 3", "SECTION 4"};
+        private String frags[] = {"Home", "Latest", "Trending", "Genre"};
 
         /*The better way to do this getting your titles as arrays*/
         //private String title[] = getActivity().getResources().getStringArray(R.array.tab_titles);

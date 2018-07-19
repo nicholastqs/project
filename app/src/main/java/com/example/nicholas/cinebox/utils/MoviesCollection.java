@@ -4,7 +4,7 @@ import com.example.nicholas.cinebox.model.MoviesModel;
 
 import java.util.ArrayList;
 
-public class MoviesCollection {
+/*public class MoviesCollection {
     ArrayList<MoviesModel> moviesModels = new ArrayList<>();
 
     public void prepareMovies() {
@@ -19,4 +19,4 @@ public class MoviesCollection {
     }
 
 
-}
+}*/
