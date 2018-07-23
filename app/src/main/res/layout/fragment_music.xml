@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageButton
+        android:id="@+id/S1"
+        android:layout_width="108dp"
+        android:layout_height="157dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="13dp"
+        android:onClick="handleSelection"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/deadpool" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="108dp"
+        android:layout_height="157dp"
+        android:layout_alignStart="@+id/S1"
+        android:layout_below="@+id/S1"
+        android:onClick="handleSelection"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/jurassic" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="108dp"
+        android:layout_height="157dp"
+        android:layout_alignStart="@+id/S1"
+        android:layout_below="@+id/imageButton2"
+        android:onClick="handleSelection"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/kingsman" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="108dp"
+        android:layout_height="157dp"
+        android:layout_alignStart="@+id/S1"
+        android:layout_below="@+id/imageButton3"
+        android:onClick="handleSelection"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/avengersinfinitywar" />
+</RelativeLayout>

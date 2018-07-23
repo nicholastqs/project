@@ -4,11 +4,11 @@
     <item
         android:id="@+id/nav_home"
         android:icon="@mipmap/baseline_queue_white_24dp"
-        android:title="Watchlist" />
+        android:title="Home" />
     <item
-        android:id="@+id/nav_watchlist"
+        android:id="@+id/nav_music"
         android:icon="@mipmap/baseline_queue_white_24dp"
-        android:title="Watchlist" />
+        android:title="Music" />
     <item
         android:id="@+id/nav_favorites"
         android:icon="@mipmap/baseline_favorite_white_24dp"
