@@ -88,7 +88,7 @@ public class MoviesAdapter extends RecyclerView.Adapter<MoviesAdapter.ViewHolder
             pg = itemView.findViewById(R.id.movie_pg);
             description = itemView.findViewById(R.id.movie_description);
             avatar = itemView.findViewById(R.id.movie_img);
-            background = itemView.findViewById(R.id.movie_background);
+            //background = itemView.findViewById(R.id.movie_background);
             movie_card = itemView.findViewById(R.id.movie_card);
         }
     }

@@ -1,37 +1,21 @@
 package com.example.nicholas.cinebox;
 
-import android.app.SearchManager;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.os.PersistableBundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
-import android.support.design.widget.TabLayout;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
-import android.support.v4.view.MenuItemCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.SearchView;
 import android.support.v7.widget.Toolbar;
 
-import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.view.ViewPager;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewGroup;
-
-import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.nicholas.cinebox.activities.BaseActivity;
 import com.example.nicholas.cinebox.activities.WelcomeActivity;
@@ -39,7 +23,7 @@ import com.example.nicholas.cinebox.fragments.FavoritesFragment;
 import com.example.nicholas.cinebox.fragments.HomeFragment;
 import com.example.nicholas.cinebox.fragments.RatedFragment;
 import com.example.nicholas.cinebox.fragments.RecommendedFragment;
-import com.example.nicholas.cinebox.fragments.WatchListFragment;
+import com.example.nicholas.cinebox.fragments.MusicFragment;
 import com.example.nicholas.cinebox.utils.Constants;
 import com.github.javiersantos.materialstyleddialogs.MaterialStyledDialog;
 import com.github.javiersantos.materialstyleddialogs.enums.Style;
@@ -121,9 +105,9 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
         if (id == R.id.nav_home) {
             mFragmentTransaction = mFragmentManager.beginTransaction();
             mFragmentTransaction.replace(R.id.containerView, new HomeFragment()).addToBackStack(Constants.NAV_ITEM_ID).commit();
-        } else if (id == R.id.nav_watchlist) {
+        } else if (id == R.id.nav_music) {
             mFragmentTransaction = mFragmentManager.beginTransaction();
-            mFragmentTransaction.replace(R.id.containerView, WatchListFragment.newInstance()).commit();
+            mFragmentTransaction.replace(R.id.containerView, MusicFragment.newInstance()).commit();
         } else if (id == R.id.nav_rated) {
             mFragmentTransaction = mFragmentManager.beginTransaction();
             mFragmentTransaction.replace(R.id.containerView, RatedFragment.newInstance()).commit();
