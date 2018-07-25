@@ -39,14 +39,13 @@ public class MusicFragment extends Fragment {
 
     public void handleSelection (View view)
     {
-        String resourceId = getResourceId(this, view );
+        String resourceId = getResourceId(getActivity(), view );
         MusicModel selectedSong = songCollection.searchById(resourceId);
         sendDataToActivity(selectedSong);
     }
 
-    public void sendDataToActivity(MusicModel song)
-    {
-        Intent intent = new Intent(this, PlaySong.class);
+    public void sendDataToActivity(MusicModel song) {
+        Intent intent = new Intent(getActivity(), PlaySong.class);
 
 
         intent.putExtra("id", song.getId());

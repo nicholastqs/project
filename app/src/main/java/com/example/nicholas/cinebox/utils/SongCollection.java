@@ -11,8 +11,7 @@ public class SongCollection {
         prepareSongs();
     }
 
-    private void prepareSongs()
-    {
+    private void prepareSongs() {
         MusicModel theWayYouLookTonight = new MusicModel("S1",
                 "The Way You Look Tonight",
                 "Michael Buble",
