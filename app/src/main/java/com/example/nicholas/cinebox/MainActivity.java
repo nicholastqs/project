@@ -1,5 +1,6 @@
 package com.example.nicholas.cinebox;
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.PersistableBundle;
@@ -16,6 +17,7 @@ import android.support.v4.app.FragmentManager;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 import com.example.nicholas.cinebox.activities.BaseActivity;
 import com.example.nicholas.cinebox.activities.WelcomeActivity;
@@ -24,7 +26,9 @@ import com.example.nicholas.cinebox.fragments.HomeFragment;
 import com.example.nicholas.cinebox.fragments.RatedFragment;
 import com.example.nicholas.cinebox.fragments.RecommendedFragment;
 import com.example.nicholas.cinebox.fragments.MusicFragment;
+import com.example.nicholas.cinebox.model.MusicModel;
 import com.example.nicholas.cinebox.utils.Constants;
+import com.example.nicholas.cinebox.utils.SongCollection;
 import com.github.javiersantos.materialstyleddialogs.MaterialStyledDialog;
 import com.github.javiersantos.materialstyleddialogs.enums.Style;
 
@@ -44,6 +48,8 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
 
     FragmentManager mFragmentManager;
     FragmentTransaction mFragmentTransaction;
+
+    private SongCollection songCollection = new SongCollection();
 
     public int mNavItemId;
     boolean navMenuFirst = true;
@@ -194,5 +200,30 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
                     finish();
                 })
                 .show();
+    }
+
+
+
+
+    public void handleSelection (View view)
+    {
+        String resourceId =  this.getResources().getResourceEntryName(view.getId());
+        MusicModel selectedSong = songCollection.searchById(resourceId);
+        sendDataToActivity(selectedSong);
+    }
+
+    public void sendDataToActivity(MusicModel song)
+    {
+        Intent intent = new Intent(this, PlaySong.class);
+
+
+        intent.putExtra("id", song.getId());
+        intent.putExtra("title", song.getTitle());
+        intent.putExtra("artist", song.getArtist());
+        intent.putExtra("fileLink", song.getFileLink());
+        intent.putExtra("coverArt", song.getCoverArt());
+
+        startActivity(intent);
+
     }
 }

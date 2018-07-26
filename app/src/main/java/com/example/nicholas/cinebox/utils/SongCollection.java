@@ -16,9 +16,9 @@ public class SongCollection {
         MusicModel theWayYouLookTonight = new MusicModel("S1",
                 "The Way You Look Tonight",
                 "Michael Buble",
-                "a5b8972e764025020625bbf9c1c2bbb06e394a60?cid=2afe87a64b0042dabf51f37318616965",
+                "ee5a4fb3166dbaa517726b9fe5e70b54714272d8?cid=2afe87a64b0042dabf51f37318616965",
                 4.39,
-                "michael_buble_collection");
+                "deadpool");
 
         MusicModel billieJean = new MusicModel("S2",
                 "Billie Jean",

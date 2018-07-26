@@ -59,7 +59,7 @@ public class PlaySong extends AppCompatActivity {
         fileLink = songData.getString("fileLink");
         coverArt = songData.getString("coverArt");
 
-        url = BASE_URL + fileLink;
+       url = BASE_URL + fileLink;
     }
     public static int getImageIdFromDrawable(Context context, String imageName)
     {

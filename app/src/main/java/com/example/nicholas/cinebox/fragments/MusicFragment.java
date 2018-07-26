@@ -28,36 +28,6 @@ public class MusicFragment extends Fragment {
         return fragment;
     }
 
-    private SongCollection songCollection = new SongCollection();
-
-    public static String getResourceId(Context context, View view)
-    {
-        String id = context.getResources().getResourceEntryName(view.getId());
-
-        return id;
-    }
-
-    public void handleSelection (View view)
-    {
-        String resourceId = getResourceId(this, view );
-        MusicModel selectedSong = songCollection.searchById(resourceId);
-        sendDataToActivity(selectedSong);
-    }
-
-    public void sendDataToActivity(MusicModel song)
-    {
-        Intent intent = new Intent(this, PlaySong.class);
-
-
-        intent.putExtra("id", song.getId());
-        intent.putExtra("title", song.getTitle());
-        intent.putExtra("artist", song.getArtist());
-        intent.putExtra("fileLink", song.getFileLink());
-        intent.putExtra("coverArt", song.getCoverArt());
-
-        startActivity(intent);
-
-    }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
