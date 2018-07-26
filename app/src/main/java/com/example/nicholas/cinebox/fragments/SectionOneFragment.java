@@ -105,10 +105,7 @@ public class SectionOneFragment extends Fragment {
                 "Duration: 1h 59min",
                 "http://cdn.collider.com/wp-content/uploads/2018/05/deadpool-2-poster-final.jpg");
         movies.add(model);
-
-
     }
-
 
     @Override
     public void onAttach(Context context) {

@@ -43,8 +43,7 @@ public class HomeFragment extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         mView = inflater.inflate(R.layout.fragment_home, container, false);
         ButterKnife.bind(this, mView);
@@ -73,7 +72,6 @@ public class HomeFragment extends Fragment {
         return mView;
     }
 
-
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
@@ -86,11 +84,8 @@ public class HomeFragment extends Fragment {
     }
 
     private class FragmentsAdapter extends FragmentStatePagerAdapter {
-        /*You can get Tab Titles using this implementation. However doing this is not recommended for localisation of your app*/
-        private String frags[] = {"Home", "Latest", "Trending", "Genre"};
 
-        /*The better way to do this getting your titles as arrays*/
-        //private String title[] = getActivity().getResources().getStringArray(R.array.tab_titles);
+        private String title[] = getActivity().getResources().getStringArray(R.array.main_list);
 
         public FragmentsAdapter(FragmentManager supportFragmentManager, Context context) {
             super(supportFragmentManager);
@@ -114,14 +109,12 @@ public class HomeFragment extends Fragment {
 
         @Override
         public int getCount() {
-            /*Depending on which string array you're using, you choose here*/
-            return frags.length;
+            return title.length;
         }
 
         @Override
         public CharSequence getPageTitle(int position) {
-            /*Same for here too if you want to using stringarrays from resources*/
-            return frags[position];
+            return title[position];
         }
     }
 }

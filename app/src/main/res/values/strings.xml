@@ -3,7 +3,14 @@
     <string name="title_activity_login">Sign in</string>
 
     <!-- Strings related to login -->
+    <string name="facebook_login">Login with facebook</string>
+    <string name="google_login">Login with Google</string>
+    <string name="new_message">New to CineBox? Sign Up Now!</string>
+    <string name="login_remember_me">Remember Me</string>
     <string name="prompt_email">Email</string>
+    <string name="login_password_hint">Password</string>
+    <string name="login_username_hint">Username Or Email</string>
+    <string name="login_successful">Login Successful</string>
     <string name="prompt_password">Password (optional)</string>
     <string name="action_sign_in">Sign in or register</string>
     <string name="action_sign_in_short">Sign in</string>
@@ -15,9 +22,7 @@
     <string name="error_password_required">Password is required</string>
     <string name="error_username_incorrect">Username is not correct</string>
     <string name="error_password_incorrect">Password is not correct</string>
-    <string name="permission_rationale">"Contacts permissions are needed for providing email
-        completions."
-    </string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email completions."</string>
     <string name="title_activity_home">Home</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>

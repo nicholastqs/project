@@ -1,6 +1,5 @@
 package com.example.nicholas.cinebox;
 
-import android.content.Context;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.PersistableBundle;
@@ -10,6 +9,7 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.SearchView;
 import android.support.v7.widget.Toolbar;
 
@@ -35,7 +35,7 @@ import com.github.javiersantos.materialstyleddialogs.enums.Style;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class MainActivity extends BaseActivity implements NavigationView.OnNavigationItemSelectedListener {
+public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
 
     @BindView(R.id.drawer_layout)
@@ -49,12 +49,11 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
     FragmentManager mFragmentManager;
     FragmentTransaction mFragmentTransaction;
 
-    private SongCollection songCollection = new SongCollection();
-
     public int mNavItemId;
     boolean navMenuFirst = true;
     private boolean isLoggedIn = false;
 
+    private SongCollection songCollection = new SongCollection();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
