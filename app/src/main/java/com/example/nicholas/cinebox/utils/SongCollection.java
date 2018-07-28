@@ -65,5 +65,22 @@ public class SongCollection {
         }
         return song;
     }
+    public MusicModel getPrevSong(String currentSongId)
+    {
+        MusicModel song = null;
+
+        for (int index = 1; index < songs.length; index--)
+        {
+            String tempSongId = songs[index].getId();
+
+            if (tempSongId.equals(currentSongId) && (index < songs.length + 1))
+            {
+                song = songs[index - 1];
+
+                break;
+            }
+        }
+        return song;
+    }
 }
 

@@ -17,6 +17,8 @@ import java.io.IOException;
 
 public class PlaySong extends AppCompatActivity {
 
+
+
     private static final String BASE_URL = "https://p.scdn.co/mp3-preview/";
 
     private String songId = "";
@@ -30,6 +32,7 @@ public class PlaySong extends AppCompatActivity {
 
 
     private int musicPosition = 0;
+
 
 
     private Button btnPlayPause = null;
@@ -191,6 +194,35 @@ public class PlaySong extends AppCompatActivity {
             artist = nextSong.getArtist();
             fileLink = nextSong.getFileLink();
             coverArt = nextSong.getCoverArt();
+
+
+            url = BASE_URL + fileLink;
+
+
+            displaySong(title, artist, coverArt);
+
+
+            stopActivities();
+
+
+            playOrPauseMusic(view);
+        }
+    }
+
+    public void playPrevious(View view)
+    {
+
+        MusicModel prevSong = songCollection.getPrevSong(songId);
+
+
+        if (prevSong != null)
+        {
+
+            songId = prevSong.getId();
+            title = prevSong.getTitle();
+            artist = prevSong.getArtist();
+            fileLink = prevSong.getFileLink();
+            coverArt = prevSong.getCoverArt();
 
 
             url = BASE_URL + fileLink;
