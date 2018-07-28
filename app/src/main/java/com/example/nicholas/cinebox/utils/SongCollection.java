@@ -4,7 +4,7 @@ import com.example.nicholas.cinebox.model.MusicModel;
 
 public class SongCollection {
 
-    private MusicModel[] songs = new MusicModel[2];
+    private MusicModel[] songs = new MusicModel[4];
 
     public SongCollection()
     {
@@ -13,22 +13,37 @@ public class SongCollection {
 
     private void prepareSongs()
     {
-        MusicModel theWayYouLookTonight = new MusicModel("S1",
-                "The Way You Look Tonight",
-                "Michael Buble",
+        MusicModel welcomeToTheParty = new MusicModel("S1",
+                "Welcome To The Party Remix",
+                "Lil Pump, Diplo, French Montana",
                 "ee5a4fb3166dbaa517726b9fe5e70b54714272d8?cid=2afe87a64b0042dabf51f37318616965",
                 4.39,
                 "deadpool");
 
-        MusicModel billieJean = new MusicModel("S2",
-                "Billie Jean",
-                "Michael Jackson",
-                "4eb779428d40d579f14d12a9daf98fc66c7d0be4?cid=2afe87a64b0042dabf51f37318616965",
+        MusicModel thisTitleMakesMeJurassic = new MusicModel("S2",
+                "This Title Makes Me Jurassic",
+                "Michael Giacchino",
+                "6c9a08862d5aee11d352d01e953dd825831f8069?cid=2afe87a64b0042dabf51f37318616965",
                 4.54,
-                "billie_jean");
+                "jurassic");
 
-        songs[0] = theWayYouLookTonight;
-        songs[1] = billieJean;
+        MusicModel eggsyIsBack = new MusicModel("S2",
+                "Eggsy Is Back",
+                "Henry Jackman",
+                "bb224577cae8b7c84e5a0b751e19f897bdedd51b?cid=2afe87a64b0042dabf51f37318616965",
+                4.54,
+                "kingsman");
+        MusicModel theAvengers = new MusicModel("S2",
+                "The Avengers",
+                "Alan Silvestri",
+                "bd28ca24dff95223b8f15c89927d603bb58e2243?cid=2afe87a64b0042dabf51f37318616965",
+                4.54,
+                "avengers");
+
+        songs[0] = welcomeToTheParty;
+        songs[1] = thisTitleMakesMeJurassic;
+        songs[2] = eggsyIsBack;
+        songs[3] = theAvengers;
     }
 
     public MusicModel searchById(String id)
