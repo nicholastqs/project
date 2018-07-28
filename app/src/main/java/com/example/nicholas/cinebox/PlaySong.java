@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.ToggleButton;
 
 import com.example.nicholas.cinebox.model.MusicModel;
 import com.example.nicholas.cinebox.utils.SongCollection;
@@ -32,6 +33,9 @@ public class PlaySong extends AppCompatActivity {
 
 
     private int musicPosition = 0;
+
+    ToggleButton btnShuffle;
+    ToggleButton btnRepeat;
 
 
 
