@@ -48,7 +48,6 @@
     <string name="favorites">Favorites</string>
     <string name="rated">Rated</string>
     <string name="recommendation">Recommendation</string>
-
     <string name="todo">TODO</string>
     <string name="song_title">Song Title</string>
     <string name="artist">Artist</string>
@@ -63,4 +62,9 @@
     <string name="logout_dialog">Do you want to log out?</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
+    <string name="shuffle_on">Shuffle On</string>
+    <string name="shuffle_off">Shuffle Off</string>
+    <string name="repeat_on">Repeat On</string>
+    <string name="repeat_off">Repeat Off</string>
+    <string name="togglebutton">ToggleButton</string>
 </resources>
