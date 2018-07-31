@@ -19,7 +19,7 @@
         app:srcCompat="@drawable/deadpool" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/S2"
         android:layout_width="108dp"
         android:layout_height="157dp"
         android:layout_alignStart="@+id/S1"
@@ -29,21 +29,21 @@
         app:srcCompat="@drawable/jurassic" />
 
     <ImageButton
-        android:id="@+id/imageButton3"
+        android:id="@+id/S3"
         android:layout_width="108dp"
         android:layout_height="157dp"
         android:layout_alignStart="@+id/S1"
-        android:layout_below="@+id/imageButton2"
+        android:layout_below="@+id/S2"
         android:onClick="handleSelection"
         android:scaleType="centerCrop"
         app:srcCompat="@drawable/kingsman" />
 
     <ImageButton
-        android:id="@+id/imageButton4"
+        android:id="@+id/S4"
         android:layout_width="108dp"
         android:layout_height="157dp"
         android:layout_alignStart="@+id/S1"
-        android:layout_below="@+id/imageButton3"
+        android:layout_below="@+id/S3"
         android:onClick="handleSelection"
         android:scaleType="centerCrop"
         app:srcCompat="@drawable/avengersinfinitywar" />

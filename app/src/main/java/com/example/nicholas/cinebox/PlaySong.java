@@ -181,6 +181,7 @@ public class PlaySong extends AppCompatActivity {
             btnPlayPause.setText("PLAY");
             setTitle(" ");
             musicPosition = 0;
+            player = null;
         }
     }
 
