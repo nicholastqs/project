@@ -51,10 +51,14 @@
             android:label="Kingsman: The Golden Circle" />
         <activity
             android:name=".activities.DetailActivity"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name=".PlaySong"></activity>
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity android:name=".PlaySong">
+        </activity>
+      <activity android:name=".activities.SongDetailActivity"
+        android:theme="@style/AppTheme.NoActionBar"/>
 
-        <meta-data
+      <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts"/>
     </application>

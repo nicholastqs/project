@@ -23,6 +23,7 @@ import com.example.nicholas.cinebox.activities.BaseActivity;
 import com.example.nicholas.cinebox.activities.WelcomeActivity;
 import com.example.nicholas.cinebox.fragments.FavoritesFragment;
 import com.example.nicholas.cinebox.fragments.HomeFragment;
+import com.example.nicholas.cinebox.fragments.MusicListFragment;
 import com.example.nicholas.cinebox.fragments.RatedFragment;
 import com.example.nicholas.cinebox.fragments.RecommendedFragment;
 import com.example.nicholas.cinebox.fragments.MusicFragment;
@@ -112,7 +113,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             mFragmentTransaction.replace(R.id.containerView, new HomeFragment()).addToBackStack(Constants.NAV_ITEM_ID).commit();
         } else if (id == R.id.nav_music) {
             mFragmentTransaction = mFragmentManager.beginTransaction();
-            mFragmentTransaction.replace(R.id.containerView, MusicFragment.newInstance()).commit();
+            mFragmentTransaction.replace(R.id.containerView, MusicListFragment.newInstance()).commit();
         } else if (id == R.id.nav_rated) {
             mFragmentTransaction = mFragmentManager.beginTransaction();
             mFragmentTransaction.replace(R.id.containerView, RatedFragment.newInstance()).commit();
@@ -147,8 +148,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main_menu, menu);
-        SearchView searchView = (SearchView) menu.findItem(R.id.search).getActionView();
-        searchView.setOnQueryTextListener(queryTextListener);
+        /*SearchView searchView = (SearchView) menu.findItem(R.id.search).getActionView();
+        searchView.setOnQueryTextListener(queryTextListener);*/
         return super.onCreateOptionsMenu(menu);
     }
 
