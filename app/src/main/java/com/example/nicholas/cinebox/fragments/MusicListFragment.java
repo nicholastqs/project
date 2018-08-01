@@ -108,7 +108,9 @@ public class MusicListFragment extends BaseFragment {
 
   private void setAdapter() {
 
-    modelList.add(new MusicModel("1", "Welcome To The Party Remix", "Lil Pump, Diplo, French Montana", "ee5a4fb3166dbaa517726b9fe5e70b54714272d8?cid=2afe87a64b0042dabf51f37318616965", 4.39, "deadpool"));
+    modelList.add(new MusicModel("https://upload.wikimedia.org/wikipedia/fi/thumb/f/f9/TheAvengers2012Poster.jpg/250px-TheAvengers2012Poster.jpg", "Welcome To The Party Remix", "Lil Pump, Diplo, French Montana", "ee5a4fb3166dbaa517726b9fe5e70b54714272d8?cid=2afe87a64b0042dabf51f37318616965", 4.39, "deadpool"));
+
+    modelList.add(new MusicModel("https://upload.wikimedia.org/wikipedia/fi/thumb/f/f9/TheAvengers2012Poster.jpg/250px-TheAvengers2012Poster.jpg", "Welcome To The Party Remix", "Lil Pump, Diplo, French Montana", "ee5a4fb3166dbaa517726b9fe5e70b54714272d8?cid=2afe87a64b0042dabf51f37318616965", 4.39, "deadpool"));
 
     mAdapter = new MusicAdapter(getActivity(), modelList);
 
