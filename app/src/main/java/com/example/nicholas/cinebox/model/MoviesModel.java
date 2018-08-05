@@ -88,3 +88,8 @@ public class MoviesModel {
 
 
 }
+
+// Avengers Trailer: https://www.youtube.com/watch?v=6ZfuNTqbHE8
+//Jurassic World Trailer : https://www.youtube.com/watch?v=RFinNxS5KN4
+//Kingsman Trailer: https://www.youtube.com/watch?v=4PggfbzJcvA
+//Deadpool2 Trailer: https://www.youtube.com/watch?v=I4tFNfROlqk&vl=en
