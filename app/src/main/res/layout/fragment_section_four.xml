@@ -1,26 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".fragments.SectionFourFragment">
+<android.support.v4.widget.NestedScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      tools:context=".fragments.SectionOneFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+        <TextView
+          android:id="@+id/latest"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/_8sdp"
+          android:text="@string/latest"
+          android:layout_marginStart="@dimen/_8sdp"
+          android:layout_marginLeft="@dimen/_8sdp"
+          android:textColor="@android:color/white"
+          android:textSize="18sp"/>
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/movie_list2"
-        android:layout_width="match_parent"
-        android:layout_height="173dp"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/textView25"
-        android:orientation="vertical" />
+        <android.support.v7.widget.RecyclerView
+          android:id="@+id/latest_list"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/_4sdp"
+          android:layout_below="@id/latest"
+          android:orientation="horizontal"
+          android:scrollbars="horizontal">
 
-    <TextView
-        android:id="@+id/textView25"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="18dp"
-        android:text="Adventure" />
-</RelativeLayout>
+        </android.support.v7.widget.RecyclerView>
+
+        <TextView
+          android:id="@+id/trending"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/_8sdp"
+          android:layout_below="@id/latest_list"
+          android:text="@string/trending"
+          android:layout_marginLeft="@dimen/_8sdp"
+          android:layout_marginStart="@dimen/_8sdp"
+          android:textColor="@android:color/white"
+          android:textSize="18sp"/>
+
+        <android.support.v7.widget.RecyclerView
+          android:id="@+id/trending_list"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/_4sdp"
+          android:layout_below="@id/trending"
+          android:orientation="horizontal"
+          android:scrollbars="horizontal">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <TextView
+          android:id="@+id/genre"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/_8sdp"
+          android:layout_below="@id/trending_list"
+          android:text="@string/genre"
+          android:layout_marginStart="@dimen/_8sdp"
+          android:layout_marginLeft="@dimen/_8sdp"
+          android:textColor="@android:color/white"
+          android:textSize="18sp"/>
+
+        <android.support.v7.widget.RecyclerView
+          android:id="@+id/genre_list"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/_4sdp"
+          android:layout_below="@id/genre"
+          android:orientation="horizontal"
+          android:scrollbars="horizontal">
+
+        </android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

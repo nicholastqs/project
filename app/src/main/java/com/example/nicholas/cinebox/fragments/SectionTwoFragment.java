@@ -65,7 +65,6 @@ public class SectionTwoFragment extends Fragment {
         movies.clear();
         prepareMovies();
 
-
         return mView;
     }
     public void prepareMovies() {

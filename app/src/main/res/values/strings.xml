@@ -68,5 +68,20 @@
   <string name="repeat_off">Repeat Off</string>
   <string name="togglebutton">ToggleButton</string>
 
+  <string name="latest">LATEST</string>
+  <string name="trending">TRENDING</string>
+  <string name="genre">GENRE</string>
 
+
+  <!--Songs-->
+  <string name="welcome_to_party">Welcome To The Party Remix</string>
+  <string name="jurassic_song">This Title Makes Me Jurassic</string>
+  <string name="eggsy_is_back">Eggsy Is Back</string>
+  <string name="the_avengers">The Avengers</string>
+
+  <!--Artists-->
+  <string name="lil_pump">Lil Pump, Diplo, French Montana</string>
+  <string name="jurassic_artist">Michael Giacchino</string>
+  <string name="eggsy_artist">Henry Jackman</string>
+  <string name="the_avengers_artist">Alan Silvestri</string>
 </resources>
