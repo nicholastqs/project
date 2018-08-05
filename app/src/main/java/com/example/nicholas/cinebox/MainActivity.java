@@ -19,13 +19,9 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-import com.example.nicholas.cinebox.activities.BaseActivity;
 import com.example.nicholas.cinebox.activities.WelcomeActivity;
 import com.example.nicholas.cinebox.fragments.FavoritesFragment;
 import com.example.nicholas.cinebox.fragments.HomeFragment;
-import com.example.nicholas.cinebox.fragments.MusicListFragment;
-import com.example.nicholas.cinebox.fragments.RatedFragment;
-import com.example.nicholas.cinebox.fragments.RecommendedFragment;
 import com.example.nicholas.cinebox.fragments.MusicFragment;
 import com.example.nicholas.cinebox.model.MusicModel;
 import com.example.nicholas.cinebox.utils.Constants;
@@ -113,16 +109,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             mFragmentTransaction.replace(R.id.containerView, new HomeFragment()).addToBackStack(Constants.NAV_ITEM_ID).commit();
         } else if (id == R.id.nav_music) {
             mFragmentTransaction = mFragmentManager.beginTransaction();
-            mFragmentTransaction.replace(R.id.containerView, MusicListFragment.newInstance()).commit();
-        } else if (id == R.id.nav_rated) {
-            mFragmentTransaction = mFragmentManager.beginTransaction();
-            mFragmentTransaction.replace(R.id.containerView, RatedFragment.newInstance()).commit();
-        } else if (id == R.id.nav_favorites) {
+            mFragmentTransaction.replace(R.id.containerView, MusicFragment.newInstance()).commit();
+         } else if (id == R.id.nav_favorites) {
             mFragmentTransaction = mFragmentManager.beginTransaction();
             mFragmentTransaction.replace(R.id.containerView, FavoritesFragment.newInstance()).commit();
-        } else if (id == R.id.nav_recommendation) {
-            mFragmentTransaction = mFragmentManager.beginTransaction();
-            mFragmentTransaction.replace(R.id.containerView, RecommendedFragment.newInstance()).commit();
         }
         mDrawerLayout.closeDrawer(GravityCompat.START);
         return true;

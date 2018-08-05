@@ -47,4 +47,76 @@
         android:onClick="handleSelection"
         android:scaleType="centerCrop"
         app:srcCompat="@drawable/avengersinfinitywar" />
+
+    <TextView
+        android:id="@+id/textView36"
+        android:layout_width="226dp"
+        android:layout_height="33dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="27dp"
+        android:layout_toEndOf="@+id/S1"
+        android:text="Welcome To The Party Remix" />
+
+    <TextView
+        android:id="@+id/textView37"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView36"
+        android:layout_marginTop="90dp"
+        android:text="Lil Pump, Diplo, French Montana" />
+
+    <TextView
+        android:id="@+id/textView44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView36"
+        android:layout_marginTop="180dp"
+        android:text="This Title Makes Me Jurassic" />
+
+    <TextView
+        android:id="@+id/textView45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView36"
+        android:layout_marginTop="248dp"
+        android:text="Michael Giacchino" />
+
+    <TextView
+        android:id="@+id/textView46"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="244dp"
+        android:layout_toEndOf="@+id/S1"
+        android:text="Eggsy Is Back" />
+
+    <TextView
+        android:id="@+id/textView47"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="174dp"
+        android:layout_toEndOf="@+id/S1"
+        android:text="Henry Jackman" />
+
+    <TextView
+        android:id="@+id/textView48"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="70dp"
+        android:layout_toEndOf="@+id/S1"
+        android:text="The Avengers" />
+
+    <TextView
+        android:id="@+id/textView49"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="21dp"
+        android:layout_toEndOf="@+id/S1"
+        android:text="Alan Silvestri" />
 </RelativeLayout>

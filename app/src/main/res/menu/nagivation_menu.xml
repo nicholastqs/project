@@ -9,18 +9,6 @@
         android:id="@+id/nav_music"
         android:icon="@mipmap/baseline_queue_white_24dp"
         android:title="Music" />
-    <item
-        android:id="@+id/nav_favorites"
-        android:icon="@mipmap/baseline_favorite_white_24dp"
-        android:title="Favorites" />
-
-    <item android:id="@+id/nav_rated"
-        android:icon="@mipmap/baseline_star_white_24dp"
-        android:title="Rated"/>
-
-    <item android:id="@+id/nav_recommendation"
-        android:icon="@mipmap/baseline_library_books_white_24dp"
-        android:title="Recommendation"/>
 
 
 </menu>

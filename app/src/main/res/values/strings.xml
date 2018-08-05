@@ -68,6 +68,5 @@
   <string name="repeat_off">Repeat Off</string>
   <string name="togglebutton">ToggleButton</string>
 
-  <string name="hello_world">Hello world!</string>
-  <string name="search_hint">Search</string>
+
 </resources>

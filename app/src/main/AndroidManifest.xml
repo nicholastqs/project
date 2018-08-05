@@ -28,37 +28,15 @@
         <activity android:name=".activities.LoginActivity" />
         <activity android:name=".activities.successful" />
         <activity
-            android:name=".Deadpool2"
-            android:label="Deadpool 2" />
-        <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".JurassicWorld"
-            android:label="Jurassic World: Fallen Kingdom" />
-        <activity
-            android:name=".Avengers"
-            android:label="Avengers: Infinity War" />
-        <activity
-            android:name=".Thor"
-            android:label="Thor: Ragnarok" />
-        <activity
-            android:name=".Incredibles2"
-            android:label="Incredibles 2" />
-        <activity
-            android:name=".Kingsman"
-            android:label="Kingsman: The Golden Circle" />
-        <activity
             android:name=".activities.DetailActivity"
-            android:theme="@style/AppTheme.NoActionBar">
-        </activity>
-        <activity android:name=".PlaySong">
-        </activity>
-      <activity android:name=".activities.SongDetailActivity"
-        android:theme="@style/AppTheme.NoActionBar"/>
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".PlaySong"></activity>
 
-      <meta-data
+        <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts"/>
     </application>
