@@ -38,9 +38,6 @@ public class DetailActivity extends BaseActivity {
 
         addToolbar();
 
-        /**
-         * You can add more here depending on the intents passed from MoviesAdapter
-         * */
 
         Bundle bundle = getIntent().getExtras();
         if (bundle != null) {
