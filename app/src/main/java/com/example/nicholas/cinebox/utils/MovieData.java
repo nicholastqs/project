@@ -14,7 +14,6 @@ public class MovieData {
     this.movies = movies;
   }
 
-
   ArrayList<MoviesModel> movies;
 
   public void prepareMovies() {
