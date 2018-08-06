@@ -71,6 +71,15 @@
   <string name="latest">LATEST</string>
   <string name="trending">TRENDING</string>
   <string name="genre">GENRE</string>
+  
+  <string name="release">Release</string>
+  <string name="duration">Duration</string>
+  <string name="detail_genre">Genre</string>
+  <string name="language">Language</string>
+  <string name="pg">PG</string>
+  <string name="rating">Rating</string>
+  <string name="synopsis">Synopsis</string>
+  <string name="watch_trailer"> Watch Trailer</string>
 
 
   <!--Songs-->

@@ -10,83 +10,116 @@ public class MoviesModel {
     private String release_date;
     private String duration;
     private String background;
+    private String trailer;
+    private String language;
+    private String rating;
 
-    public MoviesModel(String image, String title, String genre, String pg, String description, String release_date, String duration , String background) {
-        this.image = image;
-        this.title = title;
-        this.genre = genre;
-        this.pg = pg;
-        this.description = description;
-        this.release_date = release_date;
-        this.duration = duration;
-        this.background = background;
+    public MoviesModel() {
     }
 
-    public String getImage() {
-        return image;
-    }
+  public MoviesModel(String image, String title, String genre, String pg,
+      String description, String release_date, String duration, String background,
+      String trailer, String language, String rating) {
+    this.image = image;
+    this.title = title;
+    this.genre = genre;
+    this.pg = pg;
+    this.description = description;
+    this.release_date = release_date;
+    this.duration = duration;
+    this.background = background;
+    this.trailer = trailer;
+    this.language = language;
+    this.rating = rating;
+  }
 
-    public void setImage(String image) {
-        this.image = image;
-    }
+  public String getImage() {
+    return image;
+  }
 
-    public String getTitle() {
-        return title;
-    }
+  public void setImage(String image) {
+    this.image = image;
+  }
 
-    public void setTitle(String title) {
-        this.title = title;
-    }
+  public String getTitle() {
+    return title;
+  }
 
-    public String getGenre() {
-        return genre;
-    }
+  public void setTitle(String title) {
+    this.title = title;
+  }
 
-    public void setGenre(String genre) {
-        this.genre = genre;
-    }
+  public String getGenre() {
+    return genre;
+  }
 
-    public String getPg() {
-        return pg;
-    }
+  public void setGenre(String genre) {
+    this.genre = genre;
+  }
 
-    public void setPg(String pg) {
-        this.pg = pg;
-    }
+  public String getPg() {
+    return pg;
+  }
 
-    public String getDescription() {
-        return description;
-    }
+  public void setPg(String pg) {
+    this.pg = pg;
+  }
 
-    public void setDescription(String description) {
-        this.description = description;
-    }
+  public String getDescription() {
+    return description;
+  }
 
-    public String getRelease_date() {
-        return release_date;
-    }
+  public void setDescription(String description) {
+    this.description = description;
+  }
 
-    public void setRelease_date(String release_date) {
-        this.release_date = release_date;
-    }
+  public String getRelease_date() {
+    return release_date;
+  }
 
-    public String getDuration() {
-        return duration;
-    }
+  public void setRelease_date(String release_date) {
+    this.release_date = release_date;
+  }
 
-    public void setDuration(String duration) {
-        this.duration = duration;
-    }
+  public String getDuration() {
+    return duration;
+  }
 
-    public String getBackground() {
-        return background;
-    }
+  public void setDuration(String duration) {
+    this.duration = duration;
+  }
 
-    public void setBackground() {
-        this.background = background;
-    }
+  public String getBackground() {
+    return background;
+  }
 
+  public void setBackground(String background) {
+    this.background = background;
+  }
 
+  public String getTrailer() {
+    return trailer;
+  }
+
+  public void setTrailer(String trailer) {
+    this.trailer = trailer;
+  }
+
+  public String getLanguage() {
+    return language;
+  }
+
+  public void setLanguage(String language) {
+    this.language = language;
+  }
+
+  public String getRating() {
+    return rating;
+  }
+
+  public void setRating(String rating) {
+    this.rating = rating;
+  }
 }
 
 // Avengers Trailer: https://www.youtube.com/watch?v=6ZfuNTqbHE8

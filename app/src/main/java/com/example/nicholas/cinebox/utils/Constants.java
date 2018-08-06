@@ -39,4 +39,6 @@ public class Constants {
     public static boolean getLoggedInUserPref(){
         return mPref.getBoolean(LOGGED_SHARED_PREF, false);
     }
+
+
 }
